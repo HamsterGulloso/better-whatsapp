@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Better Whatsapp",
+    "version": "0.1.0",
+    "description": "Makes whatsapp web to behave properly on small horizontal screens",
+    "content_scripts": [
+        {
+            "css": [
+                "main.css"
+            ],
+            "matches": [
+                "https://web.whatsapp.com/"
+            ]
+        }
+    ]
+}
