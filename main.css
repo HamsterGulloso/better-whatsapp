@@ -20,7 +20,7 @@
     }
 
     #app > div > div > div._2Ts6i._3RGKj > header > div._604FD{
-        display: none;
+        display: none !important;
     }
 
     html > body > div:first-of-type > div > div > div:nth-of-type(4) > div > div:first-of-type > div{
