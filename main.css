@@ -12,14 +12,14 @@
         max-width: 77px !important;
     }
 
-    /* ._1pJ9J */    
-    #app > div > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > div > div > div > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1) > div {
-    /* html > body > div:nth-of-type(1) > div > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > div > div > div > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1) > div { */
-        transform: translate(-150%) !important;
+    ._1pJ9J > span {
+        position: absolute !important;
+        right: 5px !important;
+        top: 5px !important;
     }
     
     /* ._3yWey */
-    #app > div > div > div:nth-of-type(3) > div > div:nth-of-type(1) > div{
+    html > body > div:first-of-type > div > div > div:nth-of-type(4) > div > div:first-of-type > div{
         display: none !important;
     }
 
