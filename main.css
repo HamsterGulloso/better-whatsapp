@@ -12,11 +12,7 @@
     }
 
     ._1pJ9J > span {
-        position: absolute !important;
-        left: 5px !important;
-        bottom: 5px !important;
-        right: unset !important;
-        top: unset !important;
+        transform: translate(-80px, 0);
     }
 
     #app > div > div > div._2Ts6i._3RGKj > header > div._604FD{
