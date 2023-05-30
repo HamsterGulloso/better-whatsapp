@@ -11,8 +11,9 @@
         max-width: 77px !important;
     }
 
-    ._1pJ9J > span {
-        transform: translate(-80px, 0);
+    /* notifications count span */
+    #pane-side > div:nth-child(1) > div > div > div > div > div > div > div._8nE1Y > div._2KKXC > div.Dvjym > span:nth-child(1) > div > span{
+        transform: translate(-80px, 0) !important;
     }
 
     #app > div > div > div._2Ts6i._3RGKj > header > div._604FD{
