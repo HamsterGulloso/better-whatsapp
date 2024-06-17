@@ -1,5 +1,6 @@
 :root{
-    --left-bar-size: 77px
+    --contact-bar-width: 77px;
+    --leftmost-bar-width: 40px;
 }
 
 @media screen and (max-width: 747px) {
@@ -10,59 +11,37 @@
         overflow: hidden !important;
     }
 
-    /* limit left bar side */
-    #app > div > div:nth-of-type(2) > div:nth-of-type(3) {
-        max-width: var(--left-bar-size) !important;
-    }
+    /* limit bar size */
+    #app > div > div.two._aigs > div._aigv._aigw {
+        max-width: var(--contact-bar-width) !important;
 
-    /* Remove search bar */
-    #side > div:nth-of-type(1) {
+    }
+    /* hide scroll bar */
+    #pane-side::-webkit-scrollbar {
         display: none;
     }
 
-    /* notifications count span */
-    #pane-side > div:nth-child(1) > div > div > div > div > div > div > div._8nE1Y > div._2KKXC > div.Dvjym > span:nth-child(1) > div > span{
-        transform: translate(-80px, 0) !important;
-    }
-
-    /* Remove options dropdown */
-    #app > div > div > div._2Ts6i._3RGKj > header > div._604FD{
+    /* hide header */
+    #app > div > div.two._aigs > div._aigv._aigw > header {
         display: none !important;
     }
 
-    /* html > body > div:first-of-type > div > div > div:nth-of-type(4) > div > div:first-of-type > div{
+    #side > div._ak9t{
         display: none !important;
-    } */
-
-    /* Resize text panel */
-    html > body > div:nth-of-type(1) > div > div > div:nth-of-type(4){
-        max-width: calc(100vw - var(--left-bar-size)) !important;
-        overflow: hidden !important;
     }
 
-    /* html > body > div:nth-of-type(1) > div > div > div:nth-of-type(3) > div > div:nth-of-type(2)::-webkit-scrollbar{
+    #side > div:nth-child(2) {
         display: none !important;
-    } */
-
-    /* Fix page fitting so verticaql scroolbar disappears */
-    html > body > div:nth-of-type(1) > div > div {
-        max-width: 100vw !important;
-        min-width: 100vw !important;
-        overflow: hidden !important;
     }
 
-    /* Remove WA for windows ad */
-    #side > div:nth-of-type(3) > div > div > div {
-        display: none;
+    #pane-side > div:nth-child(1) > div > div > div > div > div > div > div > div > div > span:nth-child(1) > div > span {
+        transform: translate(-36px,0) !important;
     }
-
-    /* drag n drop interface  */
-    /* //*[@id="app"]/div/div[2]/div[2]/div[2] */
-     /* //*[@id="app"]/div/div[2]/div[5] */
-    #app > div > div:nth-of-type(2) > div:nth-child(2) > div:nth-child(2) {
-        position: absolute;
-        min-width: calc(100vw - var(--left-bar-size));
-        max-width: calc(100vw - var(--left-bar-size));
-        left: var(--left-bar-size)
+    #app > div > div:nth-of-type(2) > div:nth-of-type(4) {
+        max-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width));
+        overflow: hidden;
+    }
+    #app > div > div:nth-of-type(2)::after {
+        overflow: hidden;
     }
 }
