@@ -12,7 +12,7 @@
     }
 
     /* limit bar size */
-    #app > div > div.two._aigs > div._aigv._aigw {
+    #app > div > div:nth-of-type(2) > div:nth-of-type(3) {
         max-width: var(--contact-bar-width) !important;
 
     }
@@ -22,7 +22,7 @@
     }
 
     /* hide header */
-    #app > div > div.two._aigs > div._aigv._aigw > header {
+    #app > div > div:nth-of-type(2) > div:nth-of-type(3) > header {
         display: none !important;
     }
 
