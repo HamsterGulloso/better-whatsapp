@@ -1,6 +1,6 @@
 :root{
     --contact-bar-width: 77px;
-    --leftmost-bar-width: 40px;
+    --leftmost-bar-width: 55px;
 }
 
 @media screen and (max-width: 747px) {
@@ -12,18 +12,24 @@
     }
 
     /* limit bar size */
-    #app > div > div:nth-of-type(2) > div:nth-of-type(3) {
+    #app > div > div:nth-of-type(3) > div:nth-of-type(3) {
         max-width: var(--contact-bar-width) !important;
 
     }
     /* hide scroll bar */
-    #pane-side::-webkit-scrollbar {
+    #app > div > div:nth-of-type(3) > div:nth-of-type(3)::-webkit-scrollbar {
         display: none;
     }
 
     /* hide header */
-    #app > div > div:nth-of-type(2) > div:nth-of-type(3) > header {
+    #app > div > div:nth-of-type(3) > div:nth-of-type(3) > header {
         display: none !important;
+    }
+
+    /* //*[@id="app"]/div/div[3]/header */
+    #app > div > div:nth-child(3) > header {
+        box-sizing: border-box;
+        max-width: var(--leftmost-bar-width) !important;
     }
 
     #side > div._ak9t{
@@ -37,7 +43,9 @@
     #pane-side > div:nth-child(1) > div > div > div > div > div > div > div > div > div > span:nth-child(1) > div > span {
         transform: translate(-36px,0) !important;
     }
-    #app > div > div:nth-of-type(2) > div:nth-of-type(4) {
+
+    /* //*[@id="app"]/div/div[3]/div[4] */
+    #app > div > div:nth-of-type(3) > div:nth-of-type(4) {
         max-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width));
         overflow: hidden;
     }
