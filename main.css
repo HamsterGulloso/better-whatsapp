@@ -1,5 +1,5 @@
 :root{
-    --contact-bar-width: 77px;
+    --contact-bar-width: 90px;
     --leftmost-bar-width: 55px;
 }
 
@@ -13,7 +13,6 @@
 
     /* limit bar size */
     #app > div > div:nth-of-type(3) > div > div:nth-of-type(3) {
-    /* #app > div > div:nth-of-type(3) > div:nth-of-type(3) { */
         max-width: var(--contact-bar-width) !important;
 
     }
@@ -28,7 +27,7 @@
         display: none !important;
     }
 
-    /* //*[@id="app"]/div/div[3]/header */
+    /* leftmost bar fix*/
     #app > div > div:nth-child(3) > header {
         box-sizing: border-box;
         max-width: var(--leftmost-bar-width) !important;
@@ -46,12 +45,24 @@
         transform: translate(-36px,0) !important;
     }
 
-    /* definindo corpo da página */
-    /* //*[@id="app"]/div/div[3]/div[4] */
+    /* Enlarging the status bar */
+    #app > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1),
+    #app > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > span {
+        max-width: calc(100vw - var(--leftmost-bar-width)) !important;
+        min-width: calc(100vw - var(--leftmost-bar-width)) !important;
+        overflow: hidden !important;
+    }
+
+    /* hiding status panel */
+    #app > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(2){
+        display: none
+    }
+
+    /* Chat segment fixed */
     #app > div > div:nth-of-type(3) > div > div:nth-of-type(4) {
-    /* #app > div > div:nth-of-type(3) > div:nth-of-type(4) { */
-        max-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width));
-        overflow: hidden;
+        max-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width)) !important;
+        min-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width)) !important;
+        overflow: hidden !important;
     }
     #app > div > div:nth-of-type(2)::after {
         overflow: hidden;
