@@ -2,7 +2,7 @@
     --contact-bar-width: 90px;
     --leftmost-bar-width: 55px;
 }
-
+/* /html/body/div[1]/div/div = #app */
 @media screen and (max-width: 747px) {
     /* limit page size */
     body {
@@ -12,7 +12,9 @@
     }
 
     /* limit bar size */
-    #app > div > div:nth-of-type(3) > div > div:nth-of-type(3) {
+    /* /html/body/div[1]/div/div/div[1]/div/div[3]/div/div[3] */
+    #app > div:nth-of-type(1) > div > div:nth-of-type(3) > div > div:nth-of-type(3) {
+    /* #app > div > div:nth-of-type(3) > div > div:nth-of-type(3) { */
         max-width: var(--contact-bar-width) !important;
 
     }
@@ -46,8 +48,9 @@
     }
 
     /* Enlarging the status bar */
-    #app > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1),
-    #app > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > span {
+    /* div[1]/div/div[3]/div/div[2]/div[1]/div/span/div */
+    #app > div > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1),
+    #app > div > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > span {
         max-width: calc(100vw - var(--leftmost-bar-width)) !important;
         min-width: calc(100vw - var(--leftmost-bar-width)) !important;
         overflow: hidden !important;
@@ -59,11 +62,12 @@
     }
 
     /* Chat segment fixed */
-    #app > div > div:nth-of-type(3) > div > div:nth-of-type(4) {
+    #app > div > div > div:nth-of-type(3) > div > div:nth-of-type(4) {
         max-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width)) !important;
         min-width: calc(100vw - var(--contact-bar-width) - var(--leftmost-bar-width)) !important;
         overflow: hidden !important;
     }
+
     #app > div > div:nth-of-type(2)::after {
         overflow: hidden;
     }

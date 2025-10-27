@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Better WhatsApp",
+    "version": "0.1.0",
+    "description": "Makes whatsapp web to behave properly on small horizontal screens",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/"
+            ],
+            "css": [
+                "main.css"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "better-whatsapp@hamstergulloso.com"
+        }
+    }
+}
