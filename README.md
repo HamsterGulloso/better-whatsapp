@@ -10,7 +10,7 @@ This can be achieved by the command:
 
 Then run the build script:
 
-    ./buil.sh chrome
+    ./build.sh chrome
 
 Or for firefox:
 
