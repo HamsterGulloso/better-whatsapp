@@ -2,7 +2,7 @@
 
 ## How to use
 
-To use this extension in your chrome, first download the files.
+To use this extension in your browser, first download these files.
 
 This can be achieved by the command:
 
