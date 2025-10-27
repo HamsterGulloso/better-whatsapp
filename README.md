@@ -18,10 +18,10 @@ Or for firefox:
 
 ### Chrome
 
-Go to [chrome://extensions/](chrome://extensions/) and select the directory where it was downloaded after building it.
+Go to [`chrome://extensions/`](chrome://extensions/) and select the directory where it was downloaded after building it.
 
 ### Firefox
 
-Go to [about:config](about:config) and enable `xpinstall.signatures.required` to false.
+Go to [`about:config`](about:config) and enable `xpinstall.signatures.required` to false.
 
-Then go to [about:addons](about:addons) and select the better-whatsapp.xpi file located in the build directory.
+Then go to [`about:addons`](about:addons) and select the `better-whatsapp.xpi` file located in the build directory.
